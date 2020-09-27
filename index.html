@@ -1,30 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-.bg-img {
-  background-image: url("poooo.jpg");
-  min-height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="index.js"></script>
+  <title>Quiz App</title>
 </head>
 <body>
-<div class="bg-img">
   <div class="container">
-    <h1 style="font-family:moonlight;"><i style="color:black"> ocean restuarant welcomes you</i></h1>
-	<h3 style="color:black;">Very warm welcome and trust your order with us will be tasty and delightful.</h3>
-<div class="clearfix">
-      <h3 style="color:black;">continue to sign up
-      <a href="signup.html"><strong>sign up</strong></a>
-	  <br>
-	  <h2> To join as chef 
-	  <a href="new 1.html">register here</a>
-	  
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
     </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
     </div>
-</div>
+  </div>
 </body>
 </html>

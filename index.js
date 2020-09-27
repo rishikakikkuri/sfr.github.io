@@ -85,15 +85,14 @@ const questions = [
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'A sneeze is faster than eye blink?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      {  text: 'True', correct: true },
+      { text: 'False', correct: false}
     ]
-  },
-  {
+	  },
+   text: 'True', correct: true },
+      { text: 'False', correct: false{
     question: 'Is web development fun?',
     answers: [
       { text: 'Kinda', correct: false },

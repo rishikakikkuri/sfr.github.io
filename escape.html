@@ -1,18 +1,25 @@
 <html>
 <head>
-
     
     <title>Try to escape!</title>
 	<link href="escape.css" rel="stylesheet">
     <script src='escape.js'></script>
-    
 </head>
-
+<div class="bg-img">
 <body>
+<button onclick = "myFunction()">Set Alarm</button>
+
+<script>
+function myFunction() {
+    setInterval(setAlert, 100000);}
+function setAlert() {
+  alert("Time up!");
+}
+</script>
     <h1 align="center">Try to escape!</h1>
     
 <div>
-    <p>You wake up in a dark room. The only thing you can see are two rooms in front of you. What do you do?</p>
+    <p><strong>You wake up in a dark room. The only thing you can see are two rooms in front of you. What do you do?</strong></p>
 </div>
 
 <div id="result"></div>
@@ -29,8 +36,8 @@
 
 <div>
     <button id="left1"  onclick="Direction('left')">Open the left door</button>
-    <button id="right1" onclick="Direction('right')">Open the right door</button>
-    <button id="escape1"  onclick="Direction('escape')">Try to escape</button>
+    <button id="right1" onclick="Direction('right')" >Open the right door</button>
+    <button id="escape1"  onclick="Direction('escape')" >Try to escape</button>
 </div>
 <!-- the first buttons run the function Direction() when clicked --> 
 
@@ -43,15 +50,15 @@
 </div>
 
 <div>
-    <button id="A" style="display: none" onclick="Direction3('A')">A</button>
-    <button id="B" style="display: none" onclick="Direction3('B')">B</button>
-    <button id="C" style="display: none" onclick="Direction3('C')">C</button>
+    <button id="A" style="display: none" onclick="Direction3('A')"style="color:Tomato;">A</button>
+    <button id="B" style="display: none" onclick="Direction3('B')" style="color:Tomato;">B</button>
+    <button id="C" style="display: none" onclick="Direction3('C')" style="color:Tomato;">C</button>
 </div>
 
 <div>
     <button id="red" style="display: none" onclick="Direction4('red')">Red</button>
-    <button id="blue" style="display: none" onclick="Direction4('blue')">Blue</button>
-    <button id="pink" style="display: none" onclick="Direction4('pink')">Pink</button>
+    <button id="blue" style="display: none" onclick="Direction4('blue')" >Blue</button>
+    <button id="pink" style="display: none" onclick="Direction4('pink')" >Pink</button>
     <button id="yellow" style="display: none" onclick="Direction4('yellow')">Yellow</button>
     <button id="green" style="display: none" onclick="Direction4('green')">Green</button>
     
